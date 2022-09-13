@@ -1,0 +1,32 @@
+{
+    "name": "Pomodoro Tomato Timer",
+    "short_name": "Tomato",
+    "version": "0.0.1",
+    "description": "<description>",
+    "author": "Table 6",
+
+    "permissions": [
+        "alarms",
+        "notifications",
+        "storage"
+    ],
+
+    "action": {
+        "default_title": "<title>",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Z"
+            }
+        }
+    },
+
+    "default_locale": "en",    
+    "manifest_version": 3,
+    "$schema": "https://json.schemastore.org/chrome-manifest"
+}
